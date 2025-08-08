@@ -23,7 +23,11 @@ fn main(){
 
     let x: u32 =5;
     assert_eq!("u32".to_string(),type_of(&x));
-    println!("successs!!")
+    println!("successs!!");
+
+    assert_eq!(i8::MAX, 127);
+    assert_eq!(u8::MAX, 255);
+    println!("Success")
 
     
 }
