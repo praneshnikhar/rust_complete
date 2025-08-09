@@ -32,13 +32,28 @@
 
 
 
-//3.
+// //3.
+// fn main(){
+//     let(x, y) =(1,2);
+//     let s:i32 = sum(x, y);//ans = 3 || you can also replace x and y with values their values directly 
+
+//     assert_eq!(s, 3);
+//     println!("Success!");
+// }
+
+// fn sum(x: i32, y:i32) -> i32 {
+//     x + y
+// }
+
+
+
+//dont let 'println!' work
 fn main(){
-    let s:i32 = sum(1, 2);//3
-    assert_eq!(s, 3);
-    println!("Success!");
+    never_return();
+
+    println!("failed!");
 }
 
-fn sum(x: i32, y:i32) -> i32 {
-    x+y
+fn never_return() -> !{
+    panic!()
 }
