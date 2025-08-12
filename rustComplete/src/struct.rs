@@ -12,6 +12,8 @@ fn main(){
     let Person{name , ref age} =person;
 
     println!("the person's age is {}", age);
-    println!("the person's name is {}", name);
+    println!("the person's name is {}", name); 
+
+    println!("the person's age form person struct is {}", person.age); 
     
 } 
