@@ -6,11 +6,20 @@
 // }
 
 
-fn main(){
-    let s: Box <str> = "hello, world".into(); // or just -> let s: &str ="hello , world";
-    greetings(&s)                             //greetings(s) 
-}
+// fn main(){
+//     let s: Box <str> = "hello, world".into(); // or just -> let s: &str ="hello , world";
+//     greetings(&s)                             //greetings(s) 
+// }
+// fn greetings(s: &str){
+//     println!("{}", s)
+// }
 
-fn greetings(s: &str){
-    println!("{}", s)
+
+fn main(){
+    let mut s :String = String :: from ("hello");
+    s.push_str("hello, world");
+    s.push('!');
+
+    assert_eq!(s, "hello , world!");
+    println!("Success!");
 }
