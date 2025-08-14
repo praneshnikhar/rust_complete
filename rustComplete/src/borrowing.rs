@@ -16,3 +16,12 @@ let mut s = String :: from ("Helllo");
 
 let r2 = &mut s;
 }
+
+fn main(){
+    let mut s = String :: from("hello");
+    let r1 = &mut s;            
+    let r2 = &mut s;  
+    let r3 = &mut s;          
+
+    println!("{}, {}, and {}", r1, r2, r3);
+}
