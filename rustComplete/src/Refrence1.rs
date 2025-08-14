@@ -61,12 +61,20 @@
 
 
 //BORROWING RULES
+// fn main(){
+//     let mut s:String = String:: from("hello");
+//     let r1 = &s;
+//     let r2 = &s;
+
+//     println!("{},{}, r1, r2");
+//     println!("Success!");
+// }
+
 
 fn main(){
-    let mut s:String = String:: from("hello");
-    let r1 = &s;
-    let r2 = &s;
-
-    println!("{},{}, r1, r2");
-    println!("Success!");
+    let mut s: String= String:: from ("hello ,");
+    let r1 = &mut s;
+    let r2 = &mut s;
+                                                        //lets create an error
+    println!("{}, {}", r1, r2);
 }
