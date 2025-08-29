@@ -18,4 +18,5 @@ fn main(){
 }
 fn print_char(c:char){
     println!("{}", c);
+    
 }

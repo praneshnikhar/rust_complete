@@ -19,7 +19,8 @@ fn main(){
     x =x +3;
     let y:i32 =4;
     //shadowing
-    let y: &str = "I can also be text!";
+    let y: &str = "I can also be text!"
+    ;
 
 
 
